@@ -4,7 +4,7 @@ This project is created to install a two-tier application. The poject is split i
 
 Terraform is used for Infrastructure Management and Ansible is used for Configuration Management. Nginx server is the endpoint of this project. Nginx can be accessed from your web browser through using port 80.
 
-Terraform will provision a AWS EC2 server with a Ubuntu operating systemn.
+Terraform will provision a AWS EC2 server with an Ubuntu operating systemn.
 
 Ansible will install docker on the AWS EC2 and run a docker container with Nginx.
 
