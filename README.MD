@@ -17,25 +17,12 @@ AWS Account
 ```
 ### Installation
 ```
-Installing Terraform Project:
+Initializing Terraform:
 
 Download Terraform tool and Install it in your CentOS 7 workstation
-cd to /terraform/dev/ and run terraorm init to intiatlize the terrform
-
-
-Say what the step will be
+cd to /terraform/dev/ and run "terraorm init" to intiatlize the Terraform
 
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
