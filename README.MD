@@ -8,7 +8,7 @@ Terraform is used for Infrastructure Management and Ansible is used for Configur
 
 Copy/Clone the repository codechallenge to your local system.
 
-# Prerequisites
+## Prerequisites
 ```
 Operating System: CentOS 7
 Terraform
@@ -16,8 +16,9 @@ Ansible
 AWS Account
 ```
 ### Installing
-
+```
 Installing Terraform Project:
+```
 Download Terraform tool and Install it in your CentOS 7 workstation
 
 
