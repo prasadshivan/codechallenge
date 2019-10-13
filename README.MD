@@ -1,6 +1,8 @@
-# Project Title
+# Code Challenge
 
-One Paragraph of project description goes here
+This project is created to install a two-tier application. The poject is split into two modules, Infrastructure management and Configuation management. 
+
+Terraform is used for Infrastructure Management and Ansible is used for Configuration Management. nginx server is the endpoint of this project. nginx can be accessed from your web browser through using port 80.
 
 ## Getting Started
 
