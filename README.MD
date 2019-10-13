@@ -86,6 +86,7 @@ Output will show the entire infrastructure of the AWS EC2 Instance if the code i
 
 ```
 AWS EC2:
+*** You can change the region in the AWS by editing the main.yml in dev folder ***
 
 commands:
  $ cd /codechallenge/terraform/dev
