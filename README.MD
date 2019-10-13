@@ -1,10 +1,10 @@
 # Code Challenge
 
-This project is created to install a two-tier application. The poject is split into two modules, Infrastructure management and Configuation management. 
+This project is created to install a two-tier application. The project is split into two modules, Infrastructure management and Configuration management. 
 
 Terraform is used for Infrastructure Management and Ansible is used for Configuration Management. Nginx server is the endpoint of this project. Nginx can be accessed from your web browser through using port 80.
 
-Terraform will provision a AWS EC2 server with an Ubuntu operating systemn.
+Terraform will provision an AWS EC2 server with an Ubuntu operating system.
 
 Ansible will install docker on the AWS EC2 and run a docker container with Nginx.
 
@@ -23,33 +23,32 @@ AWS Account
 ```
 
 ├── ansible
-│   ├── config-management ----------> This is an Ansible Role
-│   │   ├── defaults
-│   │   │   └── main.yml
-│   │   ├── files
-│   │   ├── handlers
-│   │   │   └── main.yml
-│   │   ├── meta
-│   │   │   └── main.yml
-│   │   ├── README.md
-│   │   ├── tasks
-│   │   │   ├── install.yml
-│   │   │   └── main.yml
-│   │   ├── templates
-│   │   ├── tests
-│   │   │   ├── inventory
-│   │   │   └── test.yml
-│   │   └── vars
-│   │       └── main.yml
-│   └── installdocker.yml
+│   ├── config-management ----------> This is an Ansible Role
+│   │   ├── defaults
+│   │   │   └── main.yml
+│   │   ├── files
+│   │   ├── handlers
+│   │   │   └── main.yml
+│   │   ├── meta
+│   │   │   └── main.yml
+│   │   ├── README.md
+│   │   ├── tasks
+│   │   │   ├── install.yml
+│   │   │   └── main.yml
+│   │   ├── templates
+│   │   ├── tests
+│   │   │   ├── inventory
+│   │   │   └── test.yml
+│   │   └── vars
+│   │       └── main.yml
+│   └── installdocker.yml
 └── terraform         
     ├── dev
-    │   └── main.tf
+    │   └── main.tf
     └── modules ---------------> This is a Terraform Module
         ├── ec2
-        │   ├── instances.tf
-        │   ├── Jenkins.pem
-        │   └── variables.tf
+        │   ├── instances.tf
+        │   └── variables.tf
         └── vpc
             ├── network.tf
             └── variables.tf
@@ -65,10 +64,10 @@ Configure AWS CLI and configure the credentials in the workstation
 Initializing Terraform:
 
 Download Terraform tool and Install it in your CentOS 7 workstation
-$ cd /terraform/dev/ and run "terraorm init" to intiatlize the Terraform
+$ cd /terraform/dev/ and run "terraform init" to initialize the Terraform
 
 
-Intializing Ansible:
+Initializing Ansible:
 
 copy your AWS PEM Key to /ansible/
 
@@ -77,7 +76,7 @@ copy your AWS PEM Key to /ansible/
 ## Running the tests
 
 ```
-$ cd /terraform/dev/ and run "terraform plan" to create a execution plan and check the current state.
+$ cd /terraform/dev/ and run "terraform plan" to create an execution plan and check the current state.
 
 Output will show the entire infrastructure of the AWS EC2 Instance if the code is executed correctly.
 
@@ -98,11 +97,11 @@ commands:
  Docker and Nginx Server:
  
  commands:
-  $ cd /codechallange/ansible
+  $ cd /codechallenge/ansible
   $ ansible-playbook installdocker.yml --private-key xxxx.key -u ubuntu
   
-  - verify if the code is executed without erors
-  - Goto browser and use the EC2 public ID and port 80 to view the Nginx home page
+  - verify if the code is executed without errors
+  - Go-to browser and use the EC2 public ID and port 80 to view the Nginx home page
 
 ```
 
