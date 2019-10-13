@@ -2,23 +2,24 @@
 
 This project is created to install a two-tier application. The poject is split into two modules, Infrastructure management and Configuation management. 
 
-Terraform is used for Infrastructure Management and Ansible is used for Configuration Management. nginx server is the endpoint of this project. nginx can be accessed from your web browser through using port 80.
+Terraform is used for Infrastructure Management and Ansible is used for Configuration Management. Nginx server is the endpoint of this project. Nginx can be accessed from your web browser through using port 80.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Copy/Clone the repository codechallenge to your local system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Operating System: CentOS 7
+Terraform
+Ansible
+AWS Account
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Installing Terraform Project:
+Download Terraform tool and Install it in your CentOS 7 workstation
+
 
 Say what the step will be
 
