@@ -17,13 +17,13 @@ Copy/Clone the repository codechallenge to your local system.
 Operating System: CentOS 7
 Terraform
 Ansible
-AWS Account
+AWS Account 
 ```
 ## Folder structure
 ```
 
 ├── ansible
-│   ├── config-management
+│   ├── config-management ----------> This is an Ansible Role
 │   │   ├── defaults
 │   │   │   └── main.yml
 │   │   ├── files
@@ -42,10 +42,10 @@ AWS Account
 │   │   └── vars
 │   │       └── main.yml
 │   └── installdocker.yml
-└── terraform
+└── terraform         
     ├── dev
     │   └── main.tf
-    └── modules
+    └── modules ---------------> This is a Terraform Module
         ├── ec2
         │   ├── instances.tf
         │   ├── Jenkins.pem
@@ -58,6 +58,10 @@ AWS Account
 
 ## Installation
 ```
+Initializing AWS:
+
+Configure AWS CLI and configure the credentials in the workstation
+
 Initializing Terraform:
 
 Download Terraform tool and Install it in your CentOS 7 workstation
@@ -86,47 +90,26 @@ AWS EC2:
 
 commands:
  $ cd /codechallenge/terraform/dev
- $ Terraform apply -auto-approve
+ $ terraform apply -auto-approve
  
  - Verify if the code is executed without errors
  - Log into AWS Console to check if the 'one project' EC2 is initialized.
  
- Docker and Nginx server:
+ Docker and Nginx Server:
  
  commands:
   $ cd /codechallange/ansible
-  $ ansible-playbook installdocker.yml
- 
-
+  $ ansible-playbook installdocker.yml --private-key xxxx.key -u ubuntu
+  
+  - verify if the code is executed without erors
+  - Goto browser and use the EC2 public ID and port 80 to view the Nginx home page
 
 ```
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Version
+Version 1.0.0
 
 ## Authors
 
 * **Shiva Prasad** 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
