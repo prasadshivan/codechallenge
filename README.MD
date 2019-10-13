@@ -4,6 +4,10 @@ This project is created to install a two-tier application. The poject is split i
 
 Terraform is used for Infrastructure Management and Ansible is used for Configuration Management. Nginx server is the endpoint of this project. Nginx can be accessed from your web browser through using port 80.
 
+Terraform will provision a AWS EC2 server with a Ubuntu operating systemn.
+
+Ansible will install docker on the AWS EC2 and run a docker container with Nginx.
+
 ## Getting Started
 
 Copy/Clone the repository codechallenge to your local system.
@@ -15,7 +19,7 @@ Terraform
 Ansible
 AWS Account
 ```
-## Installation
+## Folder structure
 ```
 
 ├── ansible
@@ -57,7 +61,7 @@ AWS Account
 Initializing Terraform:
 
 Download Terraform tool and Install it in your CentOS 7 workstation
-cd to /terraform/dev/ and run "terraorm init" to intiatlize the Terraform
+$ cd /terraform/dev/ and run "terraorm init" to intiatlize the Terraform
 
 
 Intializing Ansible:
@@ -68,27 +72,29 @@ copy your AWS PEM Key to /ansible/
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
-```
+$ cd /terraform/dev/ and run "terraform plan" to create a execution plan and check the current state.
 
-### And coding style tests
+Output will show the entire infrastructure of the AWS EC2 Instance if the code is executed correctly.
 
-Explain what these tests test and why
-
-```
-Give an example
 ```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+```
+AWS EC2:
+
+commands:
+ $ cd /codechallenge/terraform/dev
+ $ Terraform apply -auto-approve
+ 
+ - Verify if the code is executed without errors
+ - Log into AWS Console to check if the 'one project' is initialized.
+ - 
+ 
+
+
+```
 
 ## Built With
 
@@ -106,7 +112,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Shiva Prasad** 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
