@@ -22,6 +22,11 @@ Initializing Terraform:
 Download Terraform tool and Install it in your CentOS 7 workstation
 cd to /terraform/dev/ and run "terraorm init" to intiatlize the Terraform
 
+
+Intializing Ansible:
+
+copy your AWS PEM Key to /ansible/
+
 ```
 
 ## Running the tests
