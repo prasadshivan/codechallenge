@@ -1,0 +1,10 @@
+---
+- name: Install docker 
+  shell: sudo snap install docker
+- name: run nginx
+  shell: docker run --name mynginx1 -p 80:80 -d nginx
+- name: Check if container is running
+  shell: docker ps
+
+
+
