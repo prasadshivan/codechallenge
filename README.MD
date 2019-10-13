@@ -15,9 +15,9 @@ Terraform
 Ansible
 AWS Account
 ```
-### Installing
+### Installation
 ```
-Installing Terraform Project:
+#### Installing Terraform Project:
 ```
 Download Terraform tool and Install it in your CentOS 7 workstation
 
