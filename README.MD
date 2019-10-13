@@ -89,8 +89,13 @@ commands:
  $ Terraform apply -auto-approve
  
  - Verify if the code is executed without errors
- - Log into AWS Console to check if the 'one project' is initialized.
- - 
+ - Log into AWS Console to check if the 'one project' EC2 is initialized.
+ 
+ Docker and Nginx server:
+ 
+ commands:
+  $ cd /codechallange/ansible
+  $ ansible-playbook installdocker.yml
  
 
 
