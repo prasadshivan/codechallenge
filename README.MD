@@ -17,6 +17,43 @@ AWS Account
 ```
 ## Installation
 ```
+
+├── ansible
+│   ├── config-management
+│   │   ├── defaults
+│   │   │   └── main.yml
+│   │   ├── files
+│   │   ├── handlers
+│   │   │   └── main.yml
+│   │   ├── meta
+│   │   │   └── main.yml
+│   │   ├── README.md
+│   │   ├── tasks
+│   │   │   ├── install.yml
+│   │   │   └── main.yml
+│   │   ├── templates
+│   │   ├── tests
+│   │   │   ├── inventory
+│   │   │   └── test.yml
+│   │   └── vars
+│   │       └── main.yml
+│   └── installdocker.yml
+└── terraform
+    ├── dev
+    │   └── main.tf
+    └── modules
+        ├── ec2
+        │   ├── instances.tf
+        │   ├── Jenkins.pem
+        │   └── variables.tf
+        └── vpc
+            ├── network.tf
+            └── variables.tf
+
+```
+
+## Installation
+```
 Initializing Terraform:
 
 Download Terraform tool and Install it in your CentOS 7 workstation
