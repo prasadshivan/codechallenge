@@ -105,6 +105,11 @@ commands:
   - Go-to browser and use the EC2 public ID and port 80 to view the Nginx home page
 
 ```
+## Destroy
+```
+ $ cd /codechallenge/terraform/dev
+ $ terraform destroy -auto-approve
+
 
 ## Version
 Version 1.0.0
