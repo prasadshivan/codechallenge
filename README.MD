@@ -109,7 +109,7 @@ commands:
 ```
  $ cd /codechallenge/terraform/dev
  $ terraform destroy -auto-approve
-
+```
 
 ## Version
 Version 1.0.0
