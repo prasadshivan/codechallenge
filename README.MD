@@ -69,7 +69,7 @@ $ cd /terraform/dev/ and run "terraform init" to initialize the Terraform
 
 Initializing Ansible:
 
-copy your AWS PEM Key to /ansible/
+copy your AWS PEM Key to /ansible/ folder
 
 ```
 
